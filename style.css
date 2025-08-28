@@ -64,8 +64,9 @@ nav {
   padding: 12px;
   border-radius: 8px;
   margin: 15px auto;
-  width: fit-content;
+  width: fit-content;   /* ❌ Replace this */
 }
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -146,7 +147,8 @@ nav ul li.dropdown:hover .dropdown-box {
   background: rgba(0,0,0,0.5);
   padding: 10px;
   border-radius: 12px;
-  width: 150px;
+  width: 100%;
+  max-width: 150px;
   text-align: center;
   transition: transform 0.5s;
   color: white;
@@ -233,16 +235,19 @@ footer {
   }
   .announcements-card,
   .cards {
-    flex: 1 1 100%;
     width: 100%;
+    flex: none;
   }
   .card {
     width: 45%;
   }
 }
 @media (max-width: 576px) {
+  body {
+    padding: 5px;
+  }
   header img {
-    height: 50px;
+    height: 40px; /* smaller logo */
   }
   header h1 {
     font-size: 1.4rem;
@@ -252,5 +257,12 @@ footer {
   }
   .card {
     width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+  .announcements-card {
+    width: 100%;
+    flex: none;
   }
 }
+
