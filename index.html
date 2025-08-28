@@ -20,8 +20,18 @@
   <!-- Navbar -->
   <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
+      <li class="dropdown">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="dropdown">
+        <a href="#">About</a>
+        <div class="dropdown-box">
+          <a href="history.html">Our History</a>
+          <a href="#">Clusters</a>
+          <a href="#">Achievements</a>
+          <a href="#">FAQ</a>
+        </div>
+      </li>
       <li><a href="#">Events</a></li>
       <li><a href="#">Gallery</a></li>
       <li><a href="#">Members</a></li>
@@ -29,29 +39,44 @@
     </ul>
   </nav>
 
-  <!-- Announcements -->
+  <!-- Announcement Highlight -->
   <div class="announcement">
-    📢 Vinayaka chathurthi photos released !!!
+    📢 Vinayaka Chathurthi photos released !!!
   </div>
 
-  <!-- Cards Section -->
-  <section class="cards">
-    <div class="card">
-      <img src="images/head1.jpg" alt="Radha Moukthika">
-      <h3>Radha Moukthika</h3>
-      <p>4th year CSE</p>
+  <!-- Main Content + Announcements -->
+  <div class="heads-announcements">
+    <!-- Left: cards -->
+    <div class="main-content">
+      <section class="cards">
+        <div class="card">
+          <img src="images/head1.jpg" alt="Radha Moukthika">
+          <h3>Radha Moukthika</h3>
+          <p>4th year CSE</p>
+        </div>
+        <div class="card">
+          <img src="images/head2.jpg" alt="Harsha">
+          <h3>Harsha</h3>
+          <p>4th year EEE</p>
+        </div>
+        <div class="card">
+          <img src="images/head3.jpg" alt="Karthik">
+          <h3>Karthik</h3>
+          <p>4th year CSE</p>
+        </div>
+      </section>
     </div>
-    <div class="card">
-      <img src="images/head2.jpg" alt="Harsha">
-      <h3>Harsha</h3>
-      <p>4th year EEE </p>
+
+    <!-- Right: announcements box -->
+    <div class="announcements-card">
+      <h2>Announcements</h2>
+      <ul>
+        <li><strong>10 Aug 2025:</strong> Vinayaka Chathurthi photos released</li>
+        <li><strong>15 Aug 2025:</strong> Independence Day Event</li>
+        <li><strong>20 Aug 2025:</strong> Poetry Competition</li>
+      </ul>
     </div>
-    <div class="card">
-      <img src="images/head3.jpg" alt="Karthik">
-      <h3>Karthik</h3>
-      <p>4th year CSE</p>
-    </div>
-  </section>
+  </div>
 
   <!-- Footer -->
   <footer>
