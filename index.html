@@ -1,64 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="te">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website</title>
+  <title>తెలుగు సాహితి సమితి</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <img src="logo.png" alt="Logo">
-    <div class="header-title">
-      <h1>తెలంగాణ సంఘం</h1>
-      <p>Telangana Association</p>
+  <!-- Header -->
+  <header>
+    <img src="images/tss logo.png" alt=" Logo">
+    <div>
+      <h1>తెలుగు సాహితి సమితి</h1>
+      <p>ART IS HARMONY</p>
     </div>
   </header>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
+  <!-- Navbar -->
+  <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
+      <li class="dropdown">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="dropdown">
+        <a href="#">About</a>
+        <div class="dropdown-box">
+          <a href="history.html">Our History</a>
+          <a href="#">Clusters</a>
+          <a href="#">Achievements</a>
+          <a href="#">FAQ</a>
+        </div>
+      </li>
       <li><a href="#">Events</a></li>
+      <li><a href="#">Gallery</a></li>
       <li><a href="#">Members</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- ANNOUNCEMENTS -->
-  <section class="announcement-box">
-    <h2>📢 Announcements</h2>
-    <p>
-      Welcome to our association website! Stay tuned for upcoming events and news.  
-      Next general meeting will be held on <strong>September 15th</strong>.  
-    </p>
-  </section>
+  <!-- Announcement Highlight -->
+  <div class="announcement">
+    📢 Vinayaka Chathurthi photos released !!!
+  </div>
 
-  <!-- MEMBERS SECTION -->
-  <section class="members-container">
-    <div class="member-card">
-      <img src="member1.jpg" alt="Member 1">
-      <h3>Ravi Kumar</h3>
-      <p>President</p>
+  <!-- Main Content + Announcements -->
+  <div class="heads-announcements">
+    <!-- Left: cards -->
+    <div class="main-content">
+      <section class="cards">
+        <div class="card">
+          <img src="images/head1.jpg" alt="Radha Moukthika">
+          <h3>Radha Moukthika</h3>
+          <p>4th year CSE</p>
+        </div>
+        <div class="card">
+          <img src="images/head2.jpg" alt="Harsha">
+          <h3>Harsha</h3>
+          <p>4th year EEE</p>
+        </div>
+        <div class="card">
+          <img src="images/head3.jpg" alt="Karthik">
+          <h3>Karthik</h3>
+          <p>4th year CSE</p>
+        </div>
+      </section>
     </div>
-    <div class="member-card">
-      <img src="member2.jpg" alt="Member 2">
-      <h3>Anita Sharma</h3>
-      <p>Vice President</p>
-    </div>
-    <div class="member-card">
-      <img src="member3.jpg" alt="Member 3">
-      <h3>Suresh Reddy</h3>
-      <p>Secretary</p>
-    </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>&copy; 2025 Telangana Association. All Rights Reserved.</p>
+    <!-- Right: announcements box -->
+    <div class="announcements-card">
+      <h2>Announcements</h2>
+      <ul>
+        <li><strong>10 Aug 2025:</strong> Vinayaka Chathurthi photos released</li>
+        <li><strong>15 Aug 2025:</strong> Independence Day Event</li>
+        <li><strong>20 Aug 2025:</strong> Poetry Competition</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 తెలుగు సాహితి సమితి | All Rights Reserved</p>
   </footer>
 
 </body>
