@@ -4,7 +4,7 @@ body {
   font-family: 'Noto Sans Telugu', Arial, sans-serif;
   color: white;
   text-align: center;
-  background: url("images/tss.jpg") no-repeat center center fixed;
+  background: url("tss.jpg") no-repeat center center fixed;
   background-size: cover;
   position: relative;
 }
