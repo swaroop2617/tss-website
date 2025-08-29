@@ -9,7 +9,7 @@
   display: block;            /* make the whole card clickable */
   text-decoration: none;     /* remove underline */
   color: inherit;            /* keep original text color */
-  background: rgba(201, 170, 43, 0.9);
+  background: rgba(37, 73, 83, 0.932);
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);

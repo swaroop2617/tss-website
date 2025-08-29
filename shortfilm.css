@@ -1,0 +1,26 @@
+/* shortfilm.css - షార్ట్ ఫిల్మ్ ప్రత్యేక CSS */
+
+.cluster-detail {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.cluster-detail h2 {
+  font-size: 28px;
+  color: #00da07;  /* green accent consistent with your example */
+  margin-bottom: 15px;
+}
+
+.cluster-detail h3 {
+  margin-top: 25px;
+  color: #ffcc00;
+}
+
+.cluster-detail p, .cluster-detail li {
+  font-size: 18px;
+  line-height: 1.6;
+}
