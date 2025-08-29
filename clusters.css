@@ -1,0 +1,26 @@
+.clusters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px; /* space between cards */
+  padding: 30px;
+}
+
+.cluster-card {
+  display: block;            /* make the whole card clickable */
+  text-decoration: none;     /* remove underline */
+  color: inherit;            /* keep original text color */
+  background: rgba(201, 170, 43, 0.9);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;           /* show hand cursor like a button */
+}
+
+.cluster-card:hover {
+  transform: scale(1.05);
+}
+
+.cluster-card:hover {
+  transform: scale(1.05);
+}
