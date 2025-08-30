@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | తెలుగు సాహితి సమితి</title>
+  <link rel="stylesheet" href="style.css">       <!-- Common CSS -->
+  <link rel="stylesheet" href="gallery.css">     <!-- Page-specific CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="images/logo.png" alt="Logo">
+    <div>
+      <h1>తెలుగు సాహితి సమితి</h1>
+      <p>ART IS HARMONY</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li class="dropdown"><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">About</a>
+        <div class="dropdown-box">
+          <a href="history.html">Our History</a>
+          <a href="clusters.html">Clusters</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="gallery-section">
+      <h2>Gallery</h2>
+
+      <!-- Folders -->
+      <div id="folder-view" class="gallery-folders">
+        <div class="folder-card" onclick="openFolder('orientation')">
+          <i class="fa-regular fa-folder-open"></i>
+          <span>2025 Orientation</span>
+        </div>
+        <div class="folder-card" onclick="openFolder('vinayaka')">
+          <i class="fa-regular fa-folder-open"></i>
+          <span>Vinayaka Chavithi</span>
+        </div>
+        <div class="folder-card" onclick="openFolder('decibels')">
+          <i class="fa-regular fa-folder-open"></i>
+          <span>Decibels Photos</span>
+        </div>
+        <div class="folder-card" onclick="openFolder('ugadhi')">
+          <i class="fa-regular fa-folder-open"></i>
+          <span>Ugadhi</span>
+        </div>
+      </div>
+
+      <!-- Orientation Photos -->
+      <div id="orientation" class="photo-grid hidden">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        <h3>2025 Orientation</h3>
+        <div class="grid">
+          <img src="images/tss.jpg" alt="Orientation 1" onclick="openLightbox(this)">
+          <img src="images/g3.jpg" alt="Orientation 1" onclick="openLightbox(this)">
+          <img src="images/g1.jpg" alt="Orientation 1" onclick="openLightbox(this)">
+          <img src="images/g2.jpg" alt="Orientation 2" onclick="openLightbox(this)">
+        </div>
+      </div>
+
+      <!-- Vinayaka Photos -->
+      <div id="vinayaka" class="photo-grid hidden">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        <h3>Vinayaka Chavithi</h3>
+        <div class="grid">
+          <img src="images/vinayaka1.jpg" alt="Vinayaka 1" onclick="openLightbox(this)">
+          <img src="images/vinayaka2.jpg" alt="Vinayaka 2" onclick="openLightbox(this)">
+        </div>
+      </div>
+      
+      <!-- ugaadhi Photos -->
+      <div id="ugadhi" class="photo-grid hidden">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        <h3>ugadhi</h3>
+        <div class="grid">
+          <img src="images/ugaadhi/u1.jpg" alt="Ugadhi 1" onclick="openLightbox(this)">
+          <img src="images/ugaadhi/u2.jpg" alt="Ugadhi 2" onclick="openLightbox(this)">
+          <img src="images/ugaadhi/u3.jpg" alt="Ugadhi 3" onclick="openLightbox(this)">
+          <img src="images/ugaadhi/u4.jpg" alt="Ugadhi 4" onclick="openLightbox(this)">
+          <img src="images/ugaadhi/u12.jpg" alt="Ugadhi 5" onclick="openLightbox(this)">
+
+
+          
+        </div>
+      </div>
+
+      <!-- Decibels Photos -->
+      <div id="decibels" class="photo-grid hidden">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        <h3>Decibels Photos</h3>
+        <div class="grid">
+          <img src="images/decibels1.jpg" alt="Decibels 1" onclick="openLightbox(this)">
+          <img src="images/decibels2.jpg" alt="Decibels 2" onclick="openLightbox(this)">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Telugu Students Society (TSS). All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function openFolder(id) {
+      document.getElementById("folder-view").classList.add("hidden");
+      document.querySelectorAll('.photo-grid').forEach(grid => grid.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+    function goBack() {
+      document.querySelectorAll('.photo-grid').forEach(grid => grid.classList.add('hidden'));
+      document.getElementById("folder-view").classList.remove("hidden");
+    }
+    function openLightbox(img) {
+      document.getElementById("lightbox").style.display = "flex";
+      document.getElementById("lightbox-img").src = img.src;
+    }
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+</body>
+</html>
