@@ -1,0 +1,83 @@
+.clusters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on desktop */
+    gap: 20px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 20px auto; /* center the section */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.cluster-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: rgba(37, 73, 83, 0.93);
+    border-radius: 12px;
+    padding: 20px 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, background 0.3s;
+    cursor: pointer;
+    text-align: center;
+    word-break: break-word;
+    min-width: 0;  /* Prevent horizontal overflow */
+    font-size: 1.05rem;
+    margin-bottom: 0;
+}
+
+.cluster-card:hover {
+    transform: scale(1.05);
+    background: rgba(37, 73, 83, 0.98);
+}
+
+.cluster-card h3 {
+    color: #97fd81;
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
+
+.cluster-card p {
+    color: #eaf4ee;
+    font-size: 1.07rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .clusters {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
+        padding: 16px;
+        max-width: 98vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .clusters {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+        gap: 12px;
+        padding: 10px;
+        max-width: 100vw;
+    }
+    .cluster-card {
+        padding: 14px 8px;
+        font-size: 0.97rem;
+        margin-bottom: 0;
+    }
+    .cluster-card h3 {
+        font-size: 1.07rem;
+        margin-bottom: 7px;
+    }
+    .cluster-card p {
+        font-size: 0.93rem;
+    }
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+    min-width: 0;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+}

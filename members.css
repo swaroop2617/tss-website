@@ -1,0 +1,99 @@
+/* Section Title */
+.section-card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 25px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: fit-content;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.section-card h2 {
+  margin: 0;
+  color: #c3ab26;
+  font-size: 1.5rem;
+}
+
+/* Heads Section - 3 cards, smaller size */
+.heads {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.heads .member-card {
+  width: 120px; /* 50% smaller size */
+  padding: 15px;
+}
+
+/* Core Members Section - grid layout */
+.members {
+  display: flex;
+  flex-wrap:wrap;
+  gap: 0px;
+  padding: 10px;
+  justify-content: center;
+}
+
+/* Member Card */
+.member-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(185, 162, 71, 0.557);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.member-card:hover {
+  transform: scale(1.04);
+}
+
+.member-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background: #222;
+}
+
+.member-card h3 {
+  font-size: 1.1rem;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.member-card p {
+  font-size: 0.85rem;
+  color: #222;
+  margin: 0;
+}
+.members .member-card {
+  width: 120px; /* 50% smaller size */
+  margin: 2px;
+  padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .members {
+    grid-template-columns: 1fr;
+  }
+  .heads {
+    flex-direction: column;
+    align-items: center;
+  }
+}

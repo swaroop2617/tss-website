@@ -1,0 +1,53 @@
+/* History Section */
+.history-container {
+    display: grid;
+    grid-template-columns: 1fr;  /* Single column layout for reading */
+    gap: 20px;
+    padding: 30px 40px;
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgba(37, 73, 83, 0.9); /* Same background tone as clusters */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    color: white;
+    font-family: 'Noto Sans Telugu', Arial, sans-serif;
+}
+
+.history-card {
+    background: rgba(37, 73, 83, 0.7);
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.history-card:hover {
+    transform: scale(1.02);
+}
+
+.history-card h2 {
+    font-size: 1.8rem;
+    color: #acd3d9;
+    margin-bottom: 15px;
+}
+
+.history-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e1eded;
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .history-container {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+    .history-card h2 {
+        font-size: 1.5rem;
+    }
+    .history-card p {
+        font-size: 1rem;
+    }
+}

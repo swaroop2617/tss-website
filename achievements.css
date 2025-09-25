@@ -1,0 +1,74 @@
+/* Achievements Section */
+.section-card {
+    background: rgba(50, 49, 49, 0.453);
+    padding: 20px 38px;
+    border-radius: 12px;
+    margin: 28px auto;
+    width: fit-content;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.22);
+    text-align: center;
+}
+.section-card h2 {
+    color: #f4d06f;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+}
+.achievements-list {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+.achievement-card {
+    background: rgba(101, 89, 18, 0.13);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.11);
+    padding: 18px 14px;
+    min-width: 220px;
+    max-width: 260px;
+    margin: 0 0 10px 0;
+    text-align: left;
+    transition: background 0.4s, transform 0.24s;
+}
+.achievement-card h3 {
+    color: #e6db74;
+    font-size: 1.15rem;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+.achievement-card p {
+    color: #e9e4c5;
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+.achievement-card:hover {
+    background: rgba(101, 89, 18, 0.22);
+    transform: scale(1.03);
+}
+.recognitions {
+    list-style: square inside;
+    padding: 0;
+    margin-top: 18px;
+    color: #f1e9bc;
+    font-size: 1.07rem;
+    text-align: left;
+}
+.recognitions li {
+    margin: 8px 0;
+}
+@media (max-width: 800px) {
+    .achievements-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+    .achievement-card {
+        max-width: 93vw;
+        min-width: unset;
+        margin: 6px 0;
+    }
+    .section-card {
+        padding: 10px 2vw;
+    }
+}
